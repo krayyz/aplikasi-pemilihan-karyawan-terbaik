@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="596" pageHeight="425" orientation="Landscape" columnWidth="556" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="120c2b81-8ccf-4951-8e2b-cddaa34fcd89">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     bobot.`id_bobot` AS bobot_id_bobot,
+     bobot.`b1` AS bobot_b1,
+     bobot.`b2` AS bobot_b2,
+     bobot.`b3` AS bobot_b3,
+     bobot.`b4` AS bobot_b4,
+     bobot.`b5` AS bobot_b5
+FROM
+     `bobot` bobot]]>
+	</queryString>
+	<field name="bobot_id_bobot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bobot_b1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bobot_b2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bobot_b3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bobot_b4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bobot_b5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="149" splitType="Stretch">
+			<line>
+				<reportElement uuid="291e2191-d02f-45e8-83a9-02d318439a99" x="0" y="8" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="a9be707f-8fff-4d3c-9c00-835d3509d295" positionType="FixRelativeToBottom" x="-3" y="82" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="11a5389d-29f8-4b39-a094-e5643de320d2" x="128" y="12" width="424" height="35" forecolor="#006699"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT. ALMAHA PUBLIC SERVICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3e2c08b-1f71-4855-b90d-c9fa176cf248" x="128" y="47" width="424" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[The Mansion Bougenville Tower Fontana Lantai 10 No. K1, Jl. Trembesi Pademangan Timur, Kota Jakarta Utara, 14410 – Indonesia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3dd05c51-681d-4d6d-98f0-1c223072dd66" x="74" y="97" width="424" height="35" forecolor="#006699"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BOBOT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ec1d0afd-7d14-4d2c-9c4e-406ba22f709c" mode="Opaque" x="0" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ID Bobot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a95f7e02-f1c7-4b50-9c9a-17f478115733" mode="Opaque" x="92" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[B1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4f8d9aa3-6cdd-4594-be7b-9fe8f2cc2cd9" mode="Opaque" x="184" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[B2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4ff3abf2-d599-434f-beed-d25133197584" mode="Opaque" x="276" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[B3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9141a215-ad75-4233-ad05-bac0ac3affd1" mode="Opaque" x="368" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[B4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6665cee4-2bc8-4e89-b676-d1c1b41037cc" mode="Opaque" x="460" y="0" width="92" height="18" forecolor="#FFFFFF" backcolor="#006699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[B5]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="b42d9447-4ca1-48d1-8d3d-1799afc3738f" x="0" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_id_bobot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a6cedcbe-8a76-4541-af97-43615e48a71c" x="92" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_b1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cd41c52f-f29c-497c-9124-a6f777bbe215" x="184" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_b2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eeba653d-8fc6-4e91-b501-500f3410d4fc" x="276" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_b3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="68d6b314-aba7-4bd3-b20d-754f9f490eb0" x="368" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_b4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="47c4be86-153f-4da5-91cc-c152aa7d3a79" x="460" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobot_b5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="152" splitType="Stretch">
+			<textField>
+				<reportElement uuid="cc92d6ae-d4e9-4cc2-869b-cc94f5cf9b3b" x="429" y="28" width="118" height="20"/>
+				<textElement>
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMMM yyyy", new java.util.Locale("id")).format (new Date())]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement uuid="5a2e53c2-1683-480e-bdb4-94e2092d5da7" key="textField" x="6" y="130" width="47" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER} + " of "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement uuid="d85b3be8-7fd9-45ce-806a-6a8589f30949" key="textField" x="44" y="130" width="30" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f09e34fe-9914-41aa-93ac-920638c1fac9" x="380" y="28" width="49" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0a3fb804-35da-4b7a-8901-bf1d9bc07fdc" x="394" y="110" width="128" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HR Departement Manager]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="ddf572d9-1255-4fc2-a7c1-79a217964d9c" x="394" y="109" width="128" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="d3a3c404-d1a1-443c-a67a-4f796ea8427d" x="405" y="49" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="028063f9-fc62-41a2-b0f9-2bace368d4cd" x="10" y="-168" width="114" height="50"/>
+				<imageExpression><![CDATA["C:\\Users\\ihrom\\OneDrive\\Documents\\project\\img2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

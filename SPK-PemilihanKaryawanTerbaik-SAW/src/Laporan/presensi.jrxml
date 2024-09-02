@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.7715610000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Logo" class="Object" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[select `presensi`.`Id_presensi`, `presensi`.`NIK`, `karyawan`.`Nama`, `presensi`.`Tgl`, `presensi`.`Kehadiran`, `presensi`.`Keterangan` from presensi
+JOIN `karyawan` ON `presensi`.`NIK`=`karyawan`.`NIK`
+order by `presensi`.`Id_presensi` ASC]]>
+	</queryString>
+	<field name="Id_presensi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tgl" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kehadiran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="72" width="555" height="2" backcolor="#000000"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="171" y="46" width="384" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL. Alamat Perusahaan No. x. Kel. Daerah, Kel. Daearah, Kota, Provinsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="14" width="384" height="32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indomaret Kelapa Dua Wetan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Presensi]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="83" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="166" y="0" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="389" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="472" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="0" width="86" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id Presensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="0" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="0" width="137" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="0" width="86" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="0" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kehadiran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="83" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="166" y="0" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="389" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="472" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="0" width="86" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="4" y="0" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Id_presensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="0" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="133" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="45" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Tgl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="393" y="0" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Kehadiran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="0" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="382" y="136" width="173" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[HR Departement Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="26" width="173" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="6" width="43" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="425" y="6" width="130" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

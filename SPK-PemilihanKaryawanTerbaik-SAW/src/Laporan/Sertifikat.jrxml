@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4db69916-51c0-4ca5-976d-bf18ab424f29">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Logo" class="java.lang.Object" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[select * from hasil_akhir order by Grade desc limit 1]]>
+	</queryString>
+	<field name="NIK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_kriteria" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_bobot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C1" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C2" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C3" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C4" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C5" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Grade" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="73b777c1-8e21-4a82-b7da-ca2aa26d6d78" x="0" y="71" width="802" height="2" backcolor="#000000"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4f961b93-4c88-451a-821b-562e454d6d95" x="190" y="35" width="424" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[The Mansion Bougenville Tower Fontana Lantai 10 No. K1, Jl. Trembesi Pademangan Timur, Kota Jakarta Utara, 14410 – Indonesia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a1d0814-29f1-488a-ad10-345a643c914a" x="190" y="0" width="424" height="35" forecolor="#006699"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT. ALMAHA PUBLIC SERVICE]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="028063f9-fc62-41a2-b0f9-2bace368d4cd" x="46" y="8" width="123" height="55"/>
+				<imageExpression><![CDATA["C:\\Users\\ihrom\\OneDrive\\Documents\\project\\img2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="445" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5f13a288-415f-41e9-a62f-b776d34ce03a" x="0" y="2" width="802" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Piagam Penghargaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a69cdbcb-2713-47f5-85ad-6320b8d9d69f" x="0" y="40" width="802" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Diberikan Kepada :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c109c386-02b0-476b-a933-3f8ab03bc2c0" x="312" y="69" width="73" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f109c08b-0cd7-4783-bcb0-ed1df5c683e2" x="312" y="89" width="73" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1d6cac07-f36d-47db-b458-d78a2e1e9447" x="312" y="109" width="73" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Nilai]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ee50d02c-a5cc-432b-9c43-d92936fb947e" x="403" y="68" width="399" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="998c6f0e-f295-49a0-a063-03300b7a2f90" x="403" y="88" width="399" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8ee8bb10-c966-4382-8a4f-94e3e1a23ae5" x="403" y="108" width="399" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Grade}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9598a9-dab0-459d-a8b2-7fde5cf6ca6e" x="0" y="148" width="802" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Sebagai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="26695ec0-0449-428d-bc0e-3fdb7b3ed2fd" x="0" y="168" width="802" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Karyawan Terbaik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ab41fa1c-e09f-4952-a30d-3cb6f31be368" x="0" y="188" width="390" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Periode : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="38895659-ddd5-4388-8778-cae3511e8a52" x="0" y="223" width="802" height="35"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Adapun yang menjadi dasar penilaian dalam pemilihan karyawan terbaik ini berdasarkan pada loyalitas, kehadiran, kedisiplinan, perilaku dan kinerja sebagai sesama karyawan maupun dengan yang bukan karyawan.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5b4d670a-4323-4d6f-b5b0-f293aa53d23e" x="0" y="258" width="802" height="20"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Semoga penghargaan ini dapat menjadi dorongan untuk meningkatkan prestasi anda dan memotivasi rekan kerja lainnya agar turut berprestasi pada masa yang akan datang.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4e5f9d9d-bb90-47c6-987f-4c549cba614f" x="385" y="68" width="18" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3da8355-871b-4b8f-bec3-faf214a9c4f1" x="385" y="88" width="18" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3122a44a-fc1f-424a-9f19-3ab7c2353406" x="385" y="108" width="18" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3cc6cad3-7fb1-44d6-94ec-f16288926681" x="604" y="425" width="198" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[HR Departement Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8241d3b1-5d82-40d8-88c6-8f14c8381258" x="604" y="315" width="198" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="9dd8971c-fe42-4ad4-9279-ad85fdf47592" x="653" y="295" width="149" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMMM yyyy", new java.util.Locale("id")).format (new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="096ecc59-c98e-4e38-88fb-adcb79834795" x="604" y="295" width="49" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="2d3f63d0-9e57-4ba2-ae5f-e85374683f73" x="390" y="188" width="412" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMMM yyyy", new java.util.Locale("id")).format (new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

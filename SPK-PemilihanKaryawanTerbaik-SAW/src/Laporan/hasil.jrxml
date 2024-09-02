@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Logo" class="Object" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     hasil_akhir.`NIK` AS NIK,
+     hasil_akhir.`Nama` AS Nama,
+     hasil_akhir.`Jabatan` AS Jabatan,
+     hasil_akhir.`Id_kriteria` AS kriteria,
+     hasil_akhir.`Id_bobot` id_bobot,
+     hasil_akhir.`C1` AS C1,
+     hasil_akhir.`C2` AS C2,
+     hasil_akhir.`C3` AS C3,
+     hasil_akhir.`C4` AS C4,
+     hasil_akhir.`C5` AS C5,
+     hasil_akhir.`Grade` AS Grade,
+     hasil_akhir.`Username` AS Username
+FROM
+     hasil_akhir order by Grade desc]]>
+	</queryString>
+	<field name="NIK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kriteria" class="java.lang.String"/>
+	<field name="id_bobot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C1" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C2" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C3" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C4" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="C5" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Grade" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="46" width="802" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL. Alamat Perusahaan No. x. Kel. Daerah, Kel. Daearah, Kota, Provinsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="14" width="619" height="32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indomaret Kelapa Dua Wetan]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="71" width="802" height="2" backcolor="#000000"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Hasil Akhir Penilaian Karyawan ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="61" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="240" y="0" width="58" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="298" y="0" width="56" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="0" width="59" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="413" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="483" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="553" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="623" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="693" y="0" width="109" height="30"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="61" y="0" width="108" height="30"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="61" y="0" width="108" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="58" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="0" width="56" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id Bobot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="0" width="59" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loyalitas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="0" width="70" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kehadiran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="70" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kedisiplinan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="553" y="0" width="70" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Perilaku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="0" width="70" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kinerja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="693" y="0" width="109" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nilai Akhir]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="169" y="0" width="71" height="30"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="169" y="0" width="71" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jabatan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="61" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="61" y="0" width="108" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="240" y="0" width="58" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="298" y="0" width="56" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="354" y="0" width="59" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="413" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="483" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="553" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="623" y="0" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="693" y="0" width="109" height="30"/>
+			</rectangle>
+			<textField>
+				<reportElement x="4" y="0" width="57" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="65" y="0" width="104" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="0" width="55" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{kriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="0" width="52" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{id_bobot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="0" width="55" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{C1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="66" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{C2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="0" width="66" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{C3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="557" y="0" width="66" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{C4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="627" y="0" width="66" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{C5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="697" y="0" width="105" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Grade}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="169" y="0" width="71" height="30"/>
+			</rectangle>
+			<textField>
+				<reportElement x="173" y="0" width="67" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Jabatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="629" y="6" width="43" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="629" y="26" width="173" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="672" y="6" width="130" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="629" y="136" width="173" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[HR Departement Manager]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
